@@ -1,0 +1,70 @@
+/* 🏋️‍♂️ تم مربی (TRAINER - Pastel) */
+[data-role="TRAINER"] {
+  --primary: #A2D2FF;
+  --primary-deep: #BDE0FE;
+  --primary-mild: #CDB4DB;
+  --primary-subtle: #FFC8DD;
+  --sidebar-bg: #CDB4DB;
+  --sidebar-text: #2b2b2b;
+}
+
+/* ⚡ تم عضو (MEMBER - Navy & Red) */
+[data-role="MEMBER"] {
+  --primary: #1D3557;
+  --primary-deep: #E63946;
+  --primary-mild: #A8DADC;
+  --primary-subtle: #fffaed;
+  --sidebar-bg: #457B9D;
+  --sidebar-text: #F1FAEE;
+}
+
+/* 🛡️ تم ادمین (ADMIN - Modern Dark Navy) */
+[data-role="ADMIN"] {
+  --primary: #1D3557;
+  --primary-deep: #E63946;
+  --primary-mild: #457B9D;
+  --primary-subtle: #F1FAEE;
+  --sidebar-bg: #1D3557;
+  --sidebar-text: #F1FAEE;
+}
+
+/* 🎨 اعمال مستقیم رنگ روی کامپوننت سایدبار قالب */
+.side-nav,
+.side-nav-bg {
+  background-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+/* رنگ آیکون‌ها و متن‌های داخل سایدبار */
+.side-nav .menu-item,
+.side-nav .menu-item-text,
+.side-nav .menu-item-icon {
+  color: var(--primary-subtle) !important;
+}
+/* ==========================================
+   🌐 ۲. استایل‌های عمومی و فونت (کد شما)
+   ========================================== */
+
+body {
+    font-feature-settings: "ss01";
+    font-family: "Kook", system-ui, sans-serif;
+    font-weight: 500;
+    overflow-x: hidden !important;
+}
+
+/* استایل‌های نمودار (Recharts) */
+.chart,
+.chart * {
+    font-family: "Kook" !important;
+    font-feature-settings: "Kook";
+    font-variant-numeric: "Kook";
+}
+
+.bar {
+    direction: rtl !important;
+}
+
+.recharts-cartesian-axis-tick-labels {
+    font-feature-settings: "ss01" !important;
+    font-family: "Kook", system-ui, sans-serif !important;
+}
