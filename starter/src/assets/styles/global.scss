@@ -1,11 +1,11 @@
 /* 🏋️‍♂️ تم مربی (TRAINER - Pastel) */
 [data-role="TRAINER"] {
-  --primary: #A2D2FF;
-  --primary-deep: #BDE0FE;
-  --primary-mild: #CDB4DB;
-  --primary-subtle: #FFC8DD;
-  --sidebar-bg: #CDB4DB;
-  --sidebar-text: #2b2b2b;
+  --primary: #161E54;         /* سرمه‌ای اصلی */
+  --primary-deep: #F16D34;    /* نارنجی تند */
+  --primary-mild: #BBE0EF;    /* آبی ملایم */
+  --primary-subtle: #FF986A;  /* نارنجی روشن */
+  --sidebar-bg: #161E54;      /* پس‌زمینه سایدبار سرمه‌ای */
+  --sidebar-text: #BBE0EF;    /* متن و آیکون‌های سایدبار آبی ملایم */
 }
 
 /* ⚡ تم عضو (MEMBER - Navy & Red) */
@@ -67,4 +67,22 @@ body {
 .recharts-cartesian-axis-tick-labels {
     font-feature-settings: "ss01" !important;
     font-family: "Kook", system-ui, sans-serif !important;
+}
+
+/* حذف پس‌زمینه پیش‌فرض قالب و اعمال پس‌زمینه دلخواه برای پنل مربی */
+[data-role="TRAINER"] body, 
+[data-role="TRAINER"] .app-layout,
+[data-role="TRAINER"] main {
+  background-color: #f8fafc !important; /* رنگ خاکستری بسیار ملایم و مدرن مشابه تصویر */
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* رفع مشکل محدود بودن عرض محتوا و گسترش کامل به اندازه کل صفحه */
+.main-content-container, 
+.content-fixed-width,
+div[class*="max-w-"] {
+  max-width: 100% !important;
 }

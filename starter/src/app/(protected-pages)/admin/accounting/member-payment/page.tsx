@@ -130,7 +130,7 @@ export default function StudentsSettlementsPage() {
   }
 
   return (
-    <div className="p-6 min-h-screen text-slate-800 dir-rtl font-sans">
+    <div className="p-6 min-h-screen text-slate-800 dir-rtl font-semibold">
       {/* هدر بخش بدون بک‌گراند اجباری آبی */}
       <div className="p-6 rounded-2xl mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
